@@ -1,4 +1,5 @@
 ## About Me
+![Picture of me, my girlfriend, and our cat named Cheddar](<img width="473" height="355" alt="image" src="https://github.com/user-attachments/assets/6b57e3c0-e800-4926-a32d-f1fe1cadbcdd" />)
 My name is **Luciano Elish**. I am a **Junior** majoring in Computer Science at SUNY New Paltz. I have always loved video games and played them all the time as a kid up until now. I only played on my console until my final year of high school, when I built my own tower PC with the help of a friend. From that point on, my interest in computers kept growing, and when it came time to applying for college, I decided to choose Computer Science as my major with no coding background at all. Since that point, I have loved coding and learning more about the Computer Science world.  
 #### I have taken many classes at New Paltz, including:
 * CS1-3
