@@ -1,6 +1,7 @@
 ## About Me
-<img src=images/Luci%20keisha%20and%20cheddar.jpg width=300 height=auto style="margin: auto"/>
-
+<div style="text-align: center;">
+    <img src=images/Luci%20keisha%20and%20cheddar.jpg width=300 height=auto/>
+<div/>
 My name is **Luciano Elish**. I am a **Junior** majoring in Computer Science at SUNY New Paltz. Since Freshman year, I have loved coding and learning more about the Computer Science world.  
 #### I have taken many classes at New Paltz, including:
 * CS 1 -> 3
