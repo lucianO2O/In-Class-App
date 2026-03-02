@@ -1,19 +1,21 @@
 {
-  "name": "in-class-app",
+  "name": "excercise-app",
   "version": "1.0.0",
-  "description": "<img src=images/Luci%20keisha%20and%20cheddar.jpg width=300 height=auto/>",
-  "homepage": "https://github.com/lucianO2O/In-Class-App#readme",
+  "description": "App tracking excercise habits - project to be completed in Web Development course over the Spring '26 semester",
+  "homepage": "https://github.com/lucianO2O/Excercise-App#readme",
   "bugs": {
-    "url": "https://github.com/lucianO2O/In-Class-App/issues"
+    "url": "https://github.com/lucianO2O/Excercise-App/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucianO2O/In-Class-App.git"
+    "url": "git+https://github.com/lucianO2O/Excercise-App.git"
   },
   "license": "ISC",
   "author": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch server/index.ts"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
