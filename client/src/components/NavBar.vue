@@ -35,24 +35,24 @@ import { RouterLink } from 'vue-router'
         </RouterLink>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <RouterLink class="navbar-link">
+          <a class="navbar-link">
             More
-          </RouterLink>
+          </a>
 
           <div class="navbar-dropdown">
             <RouterLink class="navbar-item" to="/about">
               About
             </RouterLink>
-            <RouterLink class="navbar-item is-selected">
+            <a class="navbar-item is-selected">
               Jobs
-            </RouterLink>
-            <RouterLink class="navbar-item">
+            </a>
+            <a class="navbar-item">
               Contact
-            </RouterLink>
+            </a>
             <hr class="navbar-divider">
-            <RouterLink class="navbar-item">
+            <a class="navbar-item">
               Report an issue
-            </RouterLink>
+            </a>
           </div>
         </div>
       </div>
@@ -60,12 +60,12 @@ import { RouterLink } from 'vue-router'
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
-            <RouterLink class="button is-primary">
+            <a class="button is-primary">
               <strong>Sign up</strong>
-            </RouterLink>
-            <RouterLink class="button is-light">
+            </a>
+            <a class="button is-light">
               Log in
-            </RouterLink>
+            </a>
           </div>
         </div>
       </div>
