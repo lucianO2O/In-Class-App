@@ -1,4 +1,4 @@
-export { DataEnvelope, DataListEnvelope } from "./dataEnvelopes"
+export type { DataEnvelope, DataListEnvelope } from "./dataEnvelopes"
 
 export type ProductReview = {
   rating: number
@@ -12,15 +12,18 @@ export type Product = {
   id: number
   title: string
   description: string
-  price: number
-  reviews: ProductReview[]
   category: string
-  stock: number
-  rating: number
+  price: number
   tags: string[]
   brand?: string
+  reviews: ProductReview[]
   images: string[]
   thumbnail: string
+}
+
+export type CartItem = {
+  product: Product
+  quantity: number
 }
 
 export type UserRole = "admin" | "moderator" | "user"
