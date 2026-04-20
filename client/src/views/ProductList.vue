@@ -8,7 +8,7 @@ const products = useProductsStore()
 const cart = useCartStore()
 
 function addItem(productId: number) {
-  cart.addToCart(productId)
+  cart.addItem(productId)
 }
 </script>
 
