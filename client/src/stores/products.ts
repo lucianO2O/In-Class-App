@@ -4,11 +4,27 @@ import { ref } from 'vue'
 import { api } from '../services/myFetch'
 
 export const useProductsStore = defineStore('products', () => {
-  api('users').then((data) => {
-    console.log(data)
-  })
-
   const products = ref<Product[]>([])
+  const isLoading = ref(true)
+  const error = ref<string | null>(null)
 
-  return { products }
+  const loadProducts = async () => {
+    try {
+      isLoading.value = true
+      const response = await api<any>('products')
+      console.log('API Response:', response)
+      products.value = response.data
+      console.log('Products set:', products.value)
+      error.value = null
+    } catch (err) {
+      error.value = err instanceof Error ? err.message : 'Failed to load products'
+      console.error('Error loading products:', err)
+    } finally {
+      isLoading.value = false
+    }
+  }
+
+  loadProducts()
+
+  return { products, isLoading, error, loadProducts }
 })

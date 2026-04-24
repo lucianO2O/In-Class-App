@@ -37,11 +37,11 @@ export function getAll(userId: number, params: PagingRequest) {
     return { list, count }
 }
 
-export function update(
+export async function update(
     userId: number,
     productId: number,
     quantity: number,
-): ItemType {
+): Promise<CartItem> {
     // If user doesn't have a cart, create one
     data.items[userId] = data.items[userId] || []
 
@@ -51,7 +51,7 @@ export function update(
     )
     if (index === -1) {
         const newItem: ItemType = {
-            product: getProduct(productId),
+            product: await getProduct(productId),
             quantity,
         }
         data.items[userId].push(newItem)

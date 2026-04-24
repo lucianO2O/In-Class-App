@@ -19,15 +19,15 @@ export default function rest<T>(
 
   return fetch(url, options).then((res) => {
     if (!res.ok) {
-        if (res.headers.get('Content-Type')?.includes('application/json')) {
-          return res.json().then((data) => {
-            throw new Error(data.message || 'An error occurred')
-          })
-        }
-        return res.text().then((text) => {
-          throw new Error(text)
+      if (res.headers.get('Content-Type')?.includes('application/json')) {
+        return res.json().then((data) => {
+          throw new Error(data.message || 'An error occurred')
         })
       }
+      return res.text().then((text) => {
+        throw new Error(text)
+      })
+    }
     return res.json() as Promise<T>
   })
 }
