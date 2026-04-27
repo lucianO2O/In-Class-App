@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import NavBar from './components/NavBar.vue';
+import DialogBoxes from './components/DialogBoxes.vue';
 import useSessionStore from './stores/sessions';
 import MessageList from './components/MessageList.vue';
 
@@ -15,6 +16,7 @@ const sessionStore = useSessionStore();
     <MessageList />
     <RouterView />
   </div>
+  <DialogBoxes />
 </template>
 
 <style scoped></style>
